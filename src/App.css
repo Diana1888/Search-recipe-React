@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Source Serif Pro', serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.form-search{
+  background: url('https://images.unsplash.com/photo-1640806355473-a0167c9a0ce5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 100px;
+  align-items: center;
+}
+
+h1{
+  font-size: 65px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form{
+  display: flex;
+  justify-content: center;
+align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  background-color: rgba(255,255,255,0.75);
+font-size: 20px;
+  width: 70%;
+  padding: 15px 25px;
+  border: none;
+
+}
+
+.icon{
+  width: 45px;
+  opacity: 1;
+  
+
+}
+
+
+
+.btn-seacrh{
+  background-color: transparent;
+  border: none;
+  background-color: red;
+  align-self: center;
+}
+.btn-search:hover{
+  opacity: 0.5;
+}
+
+.recipe{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 35px 5px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h2{
+  margin-bottom: 0;
+}
+h3{
+  color: #a1aac2;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+li{
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.btn-toggle{
+  font-size: 20px;
+  background-color: #77cc00;
+  padding: 5px;
+  border: none;
+}
+
+.btn-link{
+  margin-top: 10px;
+  background:transparent;
+  align-self: center;
+  border: none;
+  font-size: 18px;
+  width: 40%;
+  text-decoration: underline;
+}
+
+.btn-link:hover{
+  cursor: pointer;
+  background-color: none;
+  color: blue;
 }
