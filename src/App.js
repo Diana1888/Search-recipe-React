@@ -1,14 +1,12 @@
-import './App.css';
-import FormSearch from './FormSearch';
-
+import "./App.css";
+import FormSearch from "./FormSearch";
 
 function App() {
-  return(
+  return (
     <div>
-      <FormSearch/>
+      <FormSearch />
     </div>
-  )
- 
+  );
 }
 
 export default App;
